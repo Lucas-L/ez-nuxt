@@ -1,4 +1,4 @@
-
+const PrismicConfig = require('./assets/js/prismic.config')
 export default {
   mode: 'universal',
   /*
@@ -13,7 +13,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      { innerHTML: '{ window.prismic = { endpoint: "' + PrismicConfig.apiEndpoint + '"} }' },
+      { src: '//static.cdn.prismic.io/prismic.min.js' }
+      ],
+    __dangerouslyDisableSanitizers: ['script']
   },
   /*
   ** Customize the progress-bar color
@@ -30,7 +35,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/prismic-vue.js'
   ],
   
   /*
