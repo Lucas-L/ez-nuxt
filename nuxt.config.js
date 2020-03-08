@@ -36,7 +36,8 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
-    '@/plugins/prismic-vue.js'
+    '@/plugins/prismic-vue.js',
+    { src: '~/plugins/vuex-persist.js', ssr: false },
   ],
   
   /*

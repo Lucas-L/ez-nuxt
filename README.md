@@ -1,6 +1,6 @@
 # ez-nuxt
 
-> My stylish Nuxt.js project
+> Nuxt boilerplate served with element UI, VueX persistence and Prismic headless CMS
 
 ## Build Setup
 

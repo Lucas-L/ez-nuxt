@@ -14,7 +14,8 @@
     "element-ui": "^2.4.11",
     "nuxt": "^2.0.0",
     "prismic-javascript": "^2.1.1",
-    "prismic-vue": "git+https://github.com/prismicio/prismic-vue.git#nuxt"
+    "prismic-vue": "git+https://github.com/prismicio/prismic-vue.git#nuxt",
+    "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
